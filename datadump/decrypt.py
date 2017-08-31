@@ -15,7 +15,7 @@ c = 0
 tot = 74448
 listofbytes = []
 shit = ['0'] * tot
-for b in bytes_from_file('out'):
+for b in bytes_from_file('datadump'):
     listofbytes.append(b)
 print len(listofbytes)
 outFile = open("answer.png", "wb")
