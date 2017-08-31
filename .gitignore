@@ -101,5 +101,3 @@ ENV/
 *.aup
 sound_data/
 
-#solution files
-dustbin/
