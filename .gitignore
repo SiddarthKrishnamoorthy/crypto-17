@@ -98,5 +98,8 @@ ENV/
 # mypy
 .mypy_cache/
 
+*.aup
+sound_data/
+
 #solution files
 dustbin/
