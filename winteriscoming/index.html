@@ -1,0 +1,22 @@
+<!doctype html>
+    <html>
+    <head>
+    <title>Winter is Coming</title>
+    </head>
+    <body>
+    <img src = "http://gifimage.net/wp-content/uploads/2017/08/winter-is-coming-gif-13.gif">
+    <script>
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+document.body.innerHTML += "flag{" + window.location.toString().split("?what_is_coming=")[1].split("&")[0].hashCode() + "}"
+</script>
+    </body>
+    </html>
