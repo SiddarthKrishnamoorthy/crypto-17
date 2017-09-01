@@ -1,10 +1,13 @@
 # SQLHeavy
 
-You want the flag so you drugged the admin and beat admin with a
-5$ wrench.
+After drinking the poisoned wine given to her by Jaime, Olenna
+Tyrell has become delirious. Now, she is only responding
+to SQL Queries.
 
-Now admin can only talk in queries. You are stuck. Analyze this
-carefully and you might get a flag.
+Bronn has been given the opportunity to interrogate her and find
+out the last of her secrets. Bronn is stuck. Analyze this carefully
+and help Bronn find the flag so that he might finally become Lord
+of a Castle.
 
 # Running Instructions
 
