@@ -14,7 +14,9 @@ router.post('/', function(req, res, next) {
     }
   } else {
     res.cookie('userid', req.body.name);
-    res.cookie('auth', new Buffer(req.body.name).toString('base64'));
+    if (req.body.name !== 'noone') {
+      res.cookie('auth', new Buffer(req.body.name).toString('base64'));
+    }
   }
   res.render('index', { auth: false, get: false });
 });
