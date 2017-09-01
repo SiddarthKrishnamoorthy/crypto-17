@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template
 import sqlite3
 import random
+import os
 app = Flask(__name__)
 
-conn = sqlite3.connect('weirddb.sql')
+conn = sqlite3.connect('weirddb' + os.environ['FILENUM'] + '.sql')
 
 @app.route('/',methods = ['POST', 'GET'])
 def result():
